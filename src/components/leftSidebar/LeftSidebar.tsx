@@ -14,7 +14,7 @@ import userImg from "@/assets/img/logo/Md_Tobibur_Rohman_80x80.jpg";
 const LeftSidebar = () => {
   return (
     <div>
-      <div className="flex flex-col space-y-1 mb-5 border-b border-dashed pb-2 justify-center items-center">
+      <div className="flex flex-col space-y-1 mb-5 border-b border-leftside-menu-text-color border-dashed pb-2 justify-center items-center">
         <Image
           src={userImg}
           alt=""
@@ -29,13 +29,13 @@ const LeftSidebar = () => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-sm">
-              <div className="flex items-center gap-3">
-                <MdDashboard className="text-black text-lg" />
+              <div className="flex items-center gap-3 hover:text-black text-leftside-menu-text-color duration-700 transition-all">
+                <MdDashboard className="text-lg" />
                 <p>Dashboard</p>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className="border-l pl-3 ml-2 border-black border-dashed">
+              <div className="border-l pl-3 ml-2 border-leftside-menu-text-color border-dashed">
                 <ul className="space-y-5">
                   <li>Dashboard -1</li>
                   <li>Dashboard -1</li>
@@ -46,14 +46,14 @@ const LeftSidebar = () => {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-sm">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 hover:text-black text-leftside-menu-text-color duration-700 transition-all">
                 <BsLayoutSidebar className="text-black text-lg" />
                 <p>Layouts</p>
               </div>
             </AccordionTrigger>
 
             <AccordionContent>
-              <div className="border-l pl-3 ml-2 border-black border-dashed">
+              <div className="border-l pl-3 ml-2 border-leftside-menu-text-color border-dashed">
                 <ul className="space-y-5">
                   <li>Mini Navigation</li>
                   <li>Push Navigation</li>
@@ -70,7 +70,7 @@ const LeftSidebar = () => {
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-sm">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 hover:text-black text-leftside-menu-text-color duration-700 transition-all">
                 <LiaElementor className="text-black text-lg" />
                 <p>UI Elements</p>
               </div>
@@ -78,7 +78,7 @@ const LeftSidebar = () => {
 
             <AccordionContent>
               <div className="border-l pl-3 ml-2 border-black border-dashed">
-                <ul className=" space-y-5">
+                <ul className="space-y-5">
                   <li>Buttons</li>
                   <li>Cards</li>
                   <li>Dropdowns</li>
@@ -90,14 +90,14 @@ const LeftSidebar = () => {
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger className="text-sm">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 hover:text-black text-leftside-menu-text-color duration-700 transition-all">
                 <AiOutlineForm className="text-black text-lg" />
                 <p>Forms</p>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className="border-l pl-3 ml-2 border-black border-dashed">
-                <ul className=" space-y-5">
+              <div className="border-l pl-3 ml-2 border-leftside-menu-text-color border-dashed">
+                <ul className="space-y-5">
                   <li>General</li>
                   <li>Tags</li>
                   <li>Date Time Picker</li>
@@ -107,13 +107,13 @@ const LeftSidebar = () => {
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger className=" text-sm">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 hover:text-black text-leftside-menu-text-color duration-700 transition-all">
                 <AiOutlineTable className="text-black text-lg" />
                 <p>Tables</p>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className="border-l pl-3 ml-2 border-black border-dashed">
+              <div className="border-l pl-3 ml-2 border-leftside-menu-text-color border-dashed">
                 <ul className=" space-y-5">
                   <li>Static Tables</li>
                   <li>Gridjs</li>

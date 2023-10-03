@@ -3,6 +3,13 @@ import React from "react";
 const RightSidebar = () => {
   return (
     <div className="space-y-5">
+      <div className="text-white mt-5 space-y-4">
+        <h2 className="md:text-3xl text-lg font-semibold">Typography</h2>
+        <p className=" text-justify">
+          Typography is the art and technique of arranging type to make written
+          language legible, readable and appealing when displayed.
+        </p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="space-y-5">
           <div className="bg-white w-full shadow-md p-5 rounded-lg">

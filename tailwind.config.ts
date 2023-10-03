@@ -53,6 +53,7 @@ module.exports = {
         "header-bg": "#25476a",
         "hover-bg": "#1f3c5a",
         "leftside-menu-text-color": "#75868f",
+        "search-box-bg": "#1f3c5a",
       },
       borderRadius: {
         lg: "var(--radius)",

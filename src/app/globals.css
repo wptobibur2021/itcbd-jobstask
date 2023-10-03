@@ -10,6 +10,13 @@ body {
 .AccordionTrigger[data-state="open"] > .AccordionChevron {
   transform: rotate(180deg);
 }
+
+.hd--expanded::before {
+  content: "";
+  height: 500px;
+  background-color: #25476a;
+  position: relative;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
