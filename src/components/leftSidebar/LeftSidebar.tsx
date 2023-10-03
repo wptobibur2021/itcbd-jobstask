@@ -11,7 +11,8 @@ import { LiaElementor } from "react-icons/lia";
 import { AiOutlineForm, AiOutlineTable } from "react-icons/ai";
 import Image from "next/image";
 import userImg from "@/assets/img/logo/Md_Tobibur_Rohman_80x80.jpg";
-const LeftSidebar = () => {
+const LeftSidebar = ({ isCollapse }: { isCollapse: boolean }) => {
+  console.log("isCollapse: ", isCollapse);
   return (
     <div>
       <div className="flex flex-col space-y-1 mb-5 border-b border-leftside-menu-text-color border-dashed pb-2 justify-center items-center">

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import logo from "@/assets/img/logo/nifty.png";
+import smallLogo from "@/assets/img/logo/small-logo.png";
 import {
   MdOutlineDashboard,
   MdNotificationsNone,
@@ -11,7 +12,13 @@ import {
 import { BiUser, BiDotsVerticalRounded } from "react-icons/bi";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import LeftSidebar from "../leftSidebar/LeftSidebar";
-const Header = () => {
+const Header = ({
+  setIsCollapse,
+  isCollapse,
+}: {
+  setIsCollapse: (setIsCollapse: boolean) => void;
+  isCollapse: boolean;
+}) => {
   const [isFocused, setIsFocused] = useState(false);
 
   // Event handler for input focus
@@ -26,19 +33,34 @@ const Header = () => {
   return (
     <div>
       <div className="py-2 flex items-center px-5 bg-header-bg text-white">
-        <div className="w-52">
-          <Image
-            src={logo}
-            alt=""
-            className="object-cover"
-            width={100}
-            height={40}
-          />
-        </div>
+        {isCollapse ? (
+          <div className="duration-500 transition-all ease-in-out">
+            <Image
+              src={smallLogo}
+              alt=""
+              className="object-cover mr-7"
+              width={40}
+              height={40}
+            />
+          </div>
+        ) : (
+          <div className="w-52 duration-700 transition-all ease-in-out">
+            <Image
+              src={logo}
+              alt=""
+              className="object-cover"
+              width={100}
+              height={40}
+            />
+          </div>
+        )}
         <div className="flex flex-1 justify-between">
           <div className="md:flex hidden items-center">
             <div className="cursor-pointer mr-5">
-              <MdMenu className="text-xl" />
+              <MdMenu
+                onClick={() => setIsCollapse(!isCollapse)}
+                className="text-xl"
+              />
             </div>
             <div className="flex items-center relative">
               <input
