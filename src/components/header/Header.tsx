@@ -83,7 +83,7 @@ const Header = ({
                 <SheetTrigger>
                   <MdMenu className="text-xl" />
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[200px] sm:w-[200px]">
+                <SheetContent side="right" className="w-[200px] sm:w-[200px]">
                   <LeftSidebar />
                 </SheetContent>
               </Sheet>

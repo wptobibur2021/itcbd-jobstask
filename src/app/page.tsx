@@ -77,7 +77,7 @@ export default function Home() {
             className={`bg-white md:block hidden w-52 min-h-screen rounded-tr-2xl p-5 shadow-md overflow-hidden relative`}
           >
             <div>
-              <LeftSidebar isCollapse={isCollapse} />
+              <LeftSidebar />
             </div>
           </div>
         )}
