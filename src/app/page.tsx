@@ -20,14 +20,14 @@ export default function Home() {
       <div className="flex relative justify-between">
         <div
           className={`bg-white md:block duration-300 transition-all hidden ${
-            isCollapse ? "w-20" : "w-52"
+            isCollapse ? "w-[60px]" : "w-[220px]"
           } min-h-screen rounded-tr-2xl p-5 shadow-md overflow-hidden relative`}
         >
           {isCollapse ? (
             <>
               <div
-                className={`absolute ${
-                  isCollapse ? "right-7" : "right-0"
+                className={`absolute flex mt-2 items-center justify-center flex-col ${
+                  isCollapse ? "right-4" : "right-0"
                 } duration-300 transition-all`}
               >
                 <div className="flex flex-col space-y-1 mb-5">

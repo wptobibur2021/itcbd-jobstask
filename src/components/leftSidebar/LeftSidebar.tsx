@@ -15,25 +15,21 @@ interface LeftsitebarProbs {
   isCollapse?: boolean;
 }
 const LeftSidebar: FC<LeftsitebarProbs> = ({ isCollapse }) => {
-  console.log("LeftsitebarProbs", isCollapse);
   return (
-    <div>
+    <div className="mt-[10px]">
       <div
-        className={`flex flex-col space-y-1 mb-5 border-b border-leftside-menu-text-color border-dashed pb-2 justify-center items-center`}
+        className={`flex flex-col space-y-4 mb-5 justify-center items-center`}
       >
         <Image
           src={userImg}
           alt=""
           width={50}
           height={50}
-          className="rounded-full object-cover bg-slate-500 p-[2px]"
+          className="rounded-full object-cover bg-slate-500 p-[1px]"
         />
-        {!isCollapse && (
-          <>
-            <h2 className="text-sm">Md Tobibur Rohman</h2>
-            <h4 className="text-xs">Web Application Developer</h4>
-          </>
-        )}
+        <>
+          <h2 className="text-sm">Md Tobibur Rohman</h2>
+        </>
       </div>
       <div>
         <Accordion type="single" collapsible className="w-full">
