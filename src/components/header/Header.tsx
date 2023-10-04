@@ -32,29 +32,21 @@ const Header = ({
   };
   return (
     <div>
-      <div className="py-2 flex items-center px-5 bg-header-bg text-white">
-        {isCollapse ? (
-          <div className="duration-500 transition-all ease-in-out">
-            <Image
-              src={smallLogo}
-              alt=""
-              className="object-cover mr-7"
-              width={40}
-              height={40}
-            />
-          </div>
-        ) : (
-          <div className="w-52 duration-700 transition-all ease-in-out">
-            <Image
-              src={logo}
-              alt=""
-              className="object-cover"
-              width={100}
-              height={40}
-            />
-          </div>
-        )}
-        <div className="flex flex-1 justify-between">
+      <div className="py-2 flex items-center px-5 h-14 overflow-hidden bg-header-bg text-white">
+        <div
+          className={`${
+            isCollapse ? "w-20" : "w-52"
+          } duration-700 overflow-hidden transition-all`}
+        >
+          <Image
+            src={isCollapse ? smallLogo : logo}
+            alt=""
+            className="object-cover duration-700 transition-all"
+            width={isCollapse ? 40 : 100}
+            height={40}
+          />
+        </div>
+        <div className="flex flex-1 justify-between duration-700 transition-all">
           <div className="md:flex hidden items-center">
             <div className="cursor-pointer mr-5">
               <MdMenu
