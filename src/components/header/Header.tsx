@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from "@/assets/img/logo/nifty.png";
+import logo from "@/assets/img/logo/logo.svg";
 import smallLogo from "@/assets/img/logo/small-logo.png";
 import {
   MdOutlineDashboard,
@@ -35,18 +35,25 @@ const Header = ({
       <div className="py-2 flex items-center px-5 h-14 overflow-hidden bg-header-bg text-white">
         <div
           className={`${
-            isCollapse ? "w-20" : "w-52"
-          } duration-700 overflow-hidden transition-all`}
+            isCollapse ? "w-[5rem]" : "w-52"
+          } flex gap-2 duration-300 overflow-hidden transition-all cursor-pointer origin-center zoom-in-0 hover:zoom-in-50`}
         >
           <Image
-            src={isCollapse ? smallLogo : logo}
+            src={logo}
             alt=""
             className="object-cover duration-700 transition-all"
-            width={isCollapse ? 40 : 100}
-            height={40}
+            width={30}
+            height={30}
           />
+          <div
+            className={`${
+              isCollapse && "opacity-0"
+            } duration-300 transition-all`}
+          >
+            <span className="text-xl font-bold">Nifty</span>
+          </div>
         </div>
-        <div className="flex flex-1 justify-between duration-700 transition-all">
+        <div className="flex flex-1 justify-between duration-300 transition-all">
           <div className="md:flex hidden items-center">
             <div className="cursor-pointer mr-5">
               <MdMenu

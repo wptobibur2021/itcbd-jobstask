@@ -11,6 +11,7 @@ import { LiaElementor } from "react-icons/lia";
 import { AiOutlineForm, AiOutlineTable } from "react-icons/ai";
 export default function Home() {
   const [isCollapse, setIsCollapse] = useState(false);
+  console.log("isCollapse: ", isCollapse);
   return (
     <div>
       <div>
@@ -18,32 +19,38 @@ export default function Home() {
       </div>
       <div className="flex relative justify-between">
         <div
-          className={`bg-white md:block duration-700 transition-all hidden ${
-            isCollapse ? "w-16" : "w-52"
+          className={`bg-white md:block duration-300 transition-all hidden ${
+            isCollapse ? "w-20" : "w-52"
           } min-h-screen rounded-tr-2xl p-5 shadow-md overflow-hidden relative`}
         >
           {isCollapse ? (
-            <div className="duration-700 transition-all">
-              <div className="flex flex-col space-y-1 mb-5">
-                <Image
-                  src={userImg}
-                  alt=""
-                  width={30}
-                  height={30}
-                  className="rounded-full object-cover bg-slate-500 p-[2px]"
-                />
+            <>
+              <div
+                className={`absolute ${
+                  isCollapse ? "right-7" : "right-0"
+                } duration-300 transition-all`}
+              >
+                <div className="flex flex-col space-y-1 mb-5">
+                  <Image
+                    src={userImg}
+                    alt=""
+                    width={30}
+                    height={30}
+                    className="rounded-full object-cover bg-slate-500 p-[1px]"
+                  />
+                </div>
+                <div className="space-y-5 relative">
+                  <MdDashboard className="text-lg cursor-pointer hover:text-header-bg text-leftsideicon-color duration-700 transition-all" />
+                  <BsLayoutSidebar className="text-lg cursor-pointer hover:text-header-bg text-leftsideicon-color duration-700 transition-all" />
+                  <LiaElementor className="text-lg cursor-pointer hover:text-header-bg text-leftsideicon-color duration-700 transition-all" />
+                  <AiOutlineForm className="text-lg cursor-pointer hover:text-header-bg text-leftsideicon-color duration-700 transition-all" />
+                  <AiOutlineTable className="text-lg cursor-pointer hover:text-header-bg text-leftsideicon-color duration-700 transition-all" />
+                </div>
               </div>
-              <div className="space-y-5 relative">
-                <MdDashboard className="text-lg cursor-pointer hover:text-black text-leftside-menu-text-color duration-700 transition-all" />
-                <BsLayoutSidebar className="text-lg cursor-pointer hover:text-black text-leftside-menu-text-color duration-700 transition-all" />
-                <LiaElementor className="text-lg cursor-pointer hover:text-black text-leftside-menu-text-color duration-700 transition-all" />
-                <AiOutlineForm className="text-lg cursor-pointer hover:text-black text-leftside-menu-text-color duration-700 transition-all" />
-                <AiOutlineTable className="text-lg cursor-pointer hover:text-black text-leftside-menu-text-color duration-700 transition-all" />
-              </div>
-            </div>
+            </>
           ) : (
-            <div>
-              <LeftSidebar />
+            <div className="duration-700 transition-all">
+              <LeftSidebar isCollapse={isCollapse} />
             </div>
           )}
         </div>

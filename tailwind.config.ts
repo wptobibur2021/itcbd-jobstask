@@ -54,6 +54,7 @@ module.exports = {
         "hover-bg": "#1f3c5a",
         "leftside-menu-text-color": "#75868f",
         "search-box-bg": "#1f3c5a",
+        "leftsideicon-color": "#cbd0d8",
       },
       borderRadius: {
         lg: "var(--radius)",
