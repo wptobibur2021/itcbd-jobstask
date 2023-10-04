@@ -32,25 +32,19 @@ const Header = ({
   };
   return (
     <div>
-      <div className="py-2 flex items-center px-5 h-14 overflow-hidden bg-header-bg text-white">
+      <div className="py-1 flex items-center px-5 overflow-hidden bg-header-bg text-white">
         <div
           className={`${
             isCollapse ? "w-[5rem]" : "w-52"
           } flex gap-2 duration-300 overflow-hidden transition-all cursor-pointer origin-center zoom-in-0 hover:zoom-in-50`}
         >
-          <Image
-            src={logo}
-            alt=""
-            className="object-cover duration-700 transition-all"
-            width={30}
-            height={30}
-          />
+          <Image src={logo} alt="" width={20} height={15} />
           <div
             className={`${
               isCollapse && "opacity-0"
             } duration-300 transition-all`}
           >
-            <span className="text-xl font-bold">Nifty</span>
+            <span className="text-base font-bold">Nifty</span>
           </div>
         </div>
         <div className="flex flex-1 justify-between duration-300 transition-all">
@@ -58,7 +52,7 @@ const Header = ({
             <div className="cursor-pointer mr-5">
               <MdMenu
                 onClick={() => setIsCollapse(!isCollapse)}
-                className="text-xl"
+                className="text-sm"
               />
             </div>
             <div className="flex items-center relative">
@@ -75,12 +69,12 @@ const Header = ({
           </div>
           <div className="flex">
             <div className="p-2 hidden md:block rounded-2xl cursor-pointer hover:bg-hover-bg duration-300 ease-in-out">
-              <MdOutlineDashboard className="text-xl" />
+              <MdOutlineDashboard className="text-sm" />
             </div>
             <div className="p-2 block md:hidden rounded-2xl cursor-pointer hover:bg-hover-bg duration-300 ease-in-out">
               <Sheet>
                 <SheetTrigger>
-                  <MdMenu className="text-xl" />
+                  <MdMenu className="text-sm" />
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[200px] sm:w-[200px]">
                   <LeftSidebar />
@@ -88,13 +82,13 @@ const Header = ({
               </Sheet>
             </div>
             <div className="p-2 rounded-2xl cursor-pointer hover:bg-hover-bg duration-300 ease-in-out">
-              <MdNotificationsNone className="text-xl" />
+              <MdNotificationsNone className="text-sm" />
             </div>
             <div className="p-2 rounded-2xl cursor-pointer hover:bg-hover-bg duration-300 ease-in-out">
-              <BiUser className="text-xl" />
+              <BiUser className="text-sm" />
             </div>
             <div className="p-2 rounded-2xl cursor-pointer hover:bg-hover-bg duration-300 ease-in-out">
-              <BiDotsVerticalRounded className="text-xl" />
+              <BiDotsVerticalRounded className="text-sm" />
             </div>
           </div>
         </div>
