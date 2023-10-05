@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a admin dashboard project. It's jobs tasks from [ITCBD](https://itcbd.com/)
 
-## Getting Started
+## Project Documentation
 
-First, run the development server:
+# Project Requirements
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    1. Same to same design [Themeon](https://themeon.net/nifty/v3.0.1/ui-elements/typography/).
+    2. Using [ReactJs/NextJs] (https://react.dev/)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Project Steps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Requirements Analys
+2. Create a null project with [Nextjs] (https://nextjs.org/).
+3. [Shadcn UI] (https://ui.shadcn.com/docs/installation/next) use for re-usable components.
+4. Use [Typescript] (https://www.typescriptlang.org/).
+5. Deplyment on [Vercel] (https://vercel.com).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# How To setup local PC?
 
-## Learn More
+1. Copy from [GitHub](https://github.com/wptobibur2021/itcbd-jobstask.git).
+2. Run command `npm install` in project folder.
+3. Now run start command `npm run dev` and enjoy
 
-To learn more about Next.js, take a look at the following resources:
+# Designer Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Name: [Md Tobibur Rohman] (https://tobibur.me)
+Social Link: [Facebook](https://www.facebook.com/tobibur96/) , [Linkendin] (https://www.linkedin.com/in/tobibur), [GitHub] (https://github.com/wptobibur2021)
+Project Live Link: [JobsTasks] (https://itcbd-jobstask.vercel.app/)
