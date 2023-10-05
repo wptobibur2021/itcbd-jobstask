@@ -23,6 +23,6 @@ This is a admin dashboard project. It's jobs tasks from [ITCBD](https://itcbd.co
 
 ### Designer Information
 
-Name: [Md Tobibur Rohman] (https://tobibur.me)
-Social Link: [Facebook](https://www.facebook.com/tobibur96/) , [Linkendin](https://www.linkedin.com/in/tobibur), [GitHub](https://github.com/wptobibur2021)
-Project Live Link: [JobsTasks](https://itcbd-jobstask.vercel.app/)
+1. [Md Tobibur Rohman](https://tobibur.me)
+2. Social Link: [Facebook](https://www.facebook.com/tobibur96/) , [Linkendin](https://www.linkedin.com/in/tobibur), [GitHub](https://github.com/wptobibur2021)
+3. Project Live Link: [JobsTasks](https://itcbd-jobstask.vercel.app/)
